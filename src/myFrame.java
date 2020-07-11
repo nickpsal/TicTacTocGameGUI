@@ -96,14 +96,13 @@ public class myFrame extends JFrame{
 			fp = "X";
 			sp = "O";
 			wp = "X";
-			label.setText("Ο " +wpn + " παίζει");
 		}else {
 			wpn = "Παίχτης2";
 			fp = "O";
 			sp = "X";
 			wp = "O";
-			label.setText("Ο " +wpn + " παίζει");
 		}
+		label.setText("Ο " +wpn + " παίζει");
 
 		this.setVisible(true);
 		this.setSize(550, 550);
@@ -124,91 +123,85 @@ public class myFrame extends JFrame{
 				JOptionPane.showMessageDialog(centralPanel, "Το τετράγωνο είναι κατειλημμένο",
 						"ΠΡΟΣΟΧΗ", JOptionPane.INFORMATION_MESSAGE);		
 			}
+			String title = "Aποτελέσματα";
 
-			// Ελεγχος αν κερδισ εκαποιος
+			// Ελεγχος αν κερδισε καποιος
 			if ((bt1.getText().equals(fp)) && (bt2.getText().equals(fp)) && (bt3.getText().equals(fp))){
 				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,
-						"ΑΠΟΤΕΛΕΣΜΑΤΑ", JOptionPane.INFORMATION_MESSAGE);		
+						title, JOptionPane.INFORMATION_MESSAGE);
 				setVisible(false); //αορατο
 				dispose(); //Καταστροφη του JFrame
 			}else if ((bt4.getText().equals(fp)) && (bt5.getText().equals(fp)) && (bt6.getText().equals(fp))) {
-				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,
-						"ΑΠΟΤΕΛΕΣΜΑΤΑ", JOptionPane.INFORMATION_MESSAGE);	
+				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn, title, JOptionPane.INFORMATION_MESSAGE);
 				setVisible(false); //αορατο
 				dispose(); //Καταστροφη του JFrame
 			}else if ((bt7.getText().equals(fp)) && (bt8.getText().equals(fp)) && (bt9.getText().equals(fp))) {
-				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,
-						"ΑΠΟΤΕΛΕΣΜΑΤΑ", JOptionPane.INFORMATION_MESSAGE);	
+				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,title, JOptionPane.INFORMATION_MESSAGE);
 				setVisible(false); //αορατο
 				dispose(); //Καταστροφη του JFrame
 			}else if ((bt1.getText().equals(fp)) && (bt4.getText().equals(fp)) && (bt7.getText().equals(fp))) {
-				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,
-						"ΑΠΟΤΕΛΕΣΜΑΤΑ", JOptionPane.INFORMATION_MESSAGE);	
+				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,title, JOptionPane.INFORMATION_MESSAGE);
 				setVisible(false); //αορατο
 				dispose(); //Καταστροφη του JFrame
 			}else if ((bt2.getText().equals(fp)) && (bt5.getText().equals(fp)) && (bt8.getText().equals(fp))) {
-				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,
-						"ΑΠΟΤΕΛΕΣΜΑΤΑ", JOptionPane.INFORMATION_MESSAGE);	
+				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn, title, JOptionPane.INFORMATION_MESSAGE);
 				setVisible(false); //αορατο
 				dispose(); //Καταστροφη του JFrame
 			}else if ((bt3.getText().equals(fp)) && (bt6.getText().equals(fp)) && (bt9.getText().equals(fp))) {
-				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,
-						"ΑΠΟΤΕΛΕΣΜΑΤΑ", JOptionPane.INFORMATION_MESSAGE);	
+				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn, title, JOptionPane.INFORMATION_MESSAGE);
 				setVisible(false); //αορατο
 				dispose(); //Καταστροφη του JFrame
 			}else if ((bt1.getText().equals(fp)) && (bt5.getText().equals(fp)) && (bt9.getText().equals(fp))) {
-				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,
-						"ΑΠΟΤΕΛΕΣΜΑΤΑ", JOptionPane.INFORMATION_MESSAGE);	
+				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,title, JOptionPane.INFORMATION_MESSAGE);
 				setVisible(false); //αορατο
 				dispose(); //Καταστροφη του JFrame
 			}else if ((bt3.getText().equals(fp)) && (bt5.getText().equals(fp)) && (bt7.getText().equals(fp))) {
-				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,
-						"ΑΠΟΤΕΛΕΣΜΑΤΑ", JOptionPane.INFORMATION_MESSAGE);	
+				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,title, JOptionPane.INFORMATION_MESSAGE);
 				setVisible(false); //αορατο
 				dispose(); //Καταστροφη του JFrame
 			}else if ((bt1.getText().equals(sp)) && (bt2.getText().equals(sp)) && (bt3.getText().equals(sp))){
 				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,
-						"ΑΠΟΤΕΛΕΣΜΑΤΑ", JOptionPane.INFORMATION_MESSAGE);		
+						title, JOptionPane.INFORMATION_MESSAGE);
 				setVisible(false); //αορατο
 				dispose(); //Καταστροφη του JFrame
 			}else if ((bt4.getText().equals(sp)) && (bt5.getText().equals(sp)) && (bt6.getText().equals(sp))) {
 				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,
-						"ΑΠΟΤΕΛΕΣΜΑΤΑ", JOptionPane.INFORMATION_MESSAGE);	
+						title, JOptionPane.INFORMATION_MESSAGE);
 				setVisible(false); //αορατο
 				dispose(); //Καταστροφη του JFrame
 			}else if ((bt7.getText().equals(sp)) && (bt8.getText().equals(sp)) && (bt9.getText().equals(sp))) {
 				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,
-						"ΑΠΟΤΕΛΕΣΜΑΤΑ", JOptionPane.INFORMATION_MESSAGE);	
+						title, JOptionPane.INFORMATION_MESSAGE);
 				setVisible(false); //αορατο
 				dispose(); //Καταστροφη του JFrame
 			}else if ((bt1.getText().equals(sp)) && (bt4.getText().equals(sp)) && (bt7.getText().equals(sp))) {
 				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,
-						"ΑΠΟΤΕΛΕΣΜΑΤΑ", JOptionPane.INFORMATION_MESSAGE);
+						title, JOptionPane.INFORMATION_MESSAGE);
 				setVisible(false); //αορατο
 				dispose(); //Καταστροφη του JFrame
 			}else if ((bt2.getText().equals(sp)) && (bt5.getText().equals(sp)) && (bt8.getText().equals(sp))) {
 				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,
-						"ΑΠΟΤΕΛΕΣΜΑΤΑ", JOptionPane.INFORMATION_MESSAGE);	
+						title, JOptionPane.INFORMATION_MESSAGE);
 				setVisible(false); //αορατο
 				dispose(); //Καταστροφη του JFrame
 			}else if ((bt3.getText().equals(sp)) && (bt6.getText().equals(sp)) && (bt9.getText().equals(sp))) {
 				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,
-						"ΑΠΟΤΕΛΕΣΜΑΤΑ", JOptionPane.INFORMATION_MESSAGE);	
+						title, JOptionPane.INFORMATION_MESSAGE);
 				setVisible(false); //αορατο
 				dispose(); //Καταστροφη του JFrame
 			}else if ((bt1.getText().equals(sp)) && (bt5.getText().equals(sp)) && (bt9.getText().equals(sp))) {
 				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,
-						"ΑΠΟΤΕΛΕΣΜΑΤΑ", JOptionPane.INFORMATION_MESSAGE);	
+						title, JOptionPane.INFORMATION_MESSAGE);
 				setVisible(false); //αορατο
 				dispose(); //Καταστροφη του JFrame
 			}else if ((bt3.getText().equals(sp)) && (bt5.getText().equals(sp)) && (bt7.getText().equals(sp))) {
 				JOptionPane.showMessageDialog(centralPanel, "ΝΙΚΗΣΕ Ο " + wpn,
-						"ΑΠΟΤΕΛΕΣΜΑΤΑ", JOptionPane.INFORMATION_MESSAGE);	
+						title, JOptionPane.INFORMATION_MESSAGE);
 				setVisible(false); //αορατο
 				dispose(); //Καταστροφη του JFrame
 			} else if ((!bt1.getText().equals("1")) && (!bt2.getText().equals("2")) && (!bt3.getText().equals("3")) && (!bt4.getText().equals("4")) && (!bt5.getText().equals("5")) && (!bt6.getText().equals("6")) && (!bt7.getText().equals("7")) && (!bt8.getText().equals("8")) && (!bt9.getText().equals("9"))) {
 				JOptionPane.showMessageDialog(centralPanel, "ΙΣΟΠΑΛΙΑ",
-						"ΑΠΟΤΕΛΕΣΜΑΤΑ", JOptionPane.INFORMATION_MESSAGE);	
+						title, JOptionPane.INFORMATION_MESSAGE);
 				setVisible(false); //αορατο
 				dispose(); //Καταστροφη του JFrame
 			}else {
